@@ -4,7 +4,7 @@ from pathlib import Path
 user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
 headers = {'User-Agent': user_agent}
 
-inp = input("Enter Favicon URL to get the mmh3-HASH: ")
+inp = input("Enter URL to get the mmh3-HASH: ")
 # check if the URL has a generic schema.
 # Since we don't know the schema, we will check for the presence of :// in the URL.
 while inp.find("://") == -1:

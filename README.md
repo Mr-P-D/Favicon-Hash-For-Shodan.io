@@ -9,7 +9,7 @@ this script will help you find favicon hashes which you can use in shodan to wid
 
 <b>Example:<b>
 ><br>root@Kali:~/Desktop/Favicon_Hash# python3 get_favicon_hash.py  
-><br>Enter Favicon URL to get the mmh3-HASH: https://facebook.com/favicon.ico  
+><br>Enter URL to get the mmh3-HASH: https://facebook.com/
 ><br>-1321378357  
 ><br>Now Use this on Shodan For Searching,http.favicon.hash:-1321378357
 
