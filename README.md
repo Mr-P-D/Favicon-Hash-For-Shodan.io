@@ -2,7 +2,7 @@
 this script will help you find favicon hashes which you can use in shodan to widened your attack surface
 
 <b>Pre-requisite:</b>
->pip3 install mmh3 requests
+>pip3 install mmh3 requests favicon
 
 <b>Usage:</b>
 >python3 get_favicon_hash.py URL containing favicon.ico
