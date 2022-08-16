@@ -34,3 +34,8 @@ print(
     "\t or press here: https://www.shodan.io/search?query=http.favicon.hash%3A"
     + str(hash)
 )
+
+print("Use this on Zoomeye For Searching,iconhash:\"" + str(hash)+"\"")
+print(
+    "\t or press here: https://www.zoomeye.org/searchResult?q=iconhash%3A%20%22"+str(hash)+"%22"
+)
