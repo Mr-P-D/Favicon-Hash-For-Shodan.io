@@ -17,15 +17,20 @@ if (
     and not inp.lower().endswith(".gif")
 ):
     icons = favicon.get(inp, headers=headers)
+    if len(icons) == 0:
+        print("No favicon found.")
+        print("Try to insert the direct url, such as {}/favicon.ico".format(inp))
+        exit()
+    print(icons)
     icon = icons[0]
     favicon_url = icon.url
 else:
     favicon_url = inp
-#get the icon from the favicon url.
+# get the icon from the favicon url.
 response = requests.get(favicon_url, headers=headers)
-#convert to base64
+# convert to base64
 icon_data = base64.encodebytes(response.content)
-#hash it
+# hash it
 hash = mmh3.hash(icon_data)
 
 print(hash)
@@ -35,7 +40,9 @@ print(
     + str(hash)
 )
 
-print("Use this on Zoomeye For Searching,iconhash:\"" + str(hash)+"\"")
+print('Use this on Zoomeye For Searching,iconhash:"' + str(hash) + '"')
 print(
-    "\t or press here: https://www.zoomeye.org/searchResult?q=iconhash%3A%20%22"+str(hash)+"%22"
+    "\t or press here: https://www.zoomeye.org/searchResult?q=iconhash%3A%20%22"
+    + str(hash)
+    + "%22"
 )
