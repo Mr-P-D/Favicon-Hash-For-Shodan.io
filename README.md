@@ -1,5 +1,5 @@
 # Favicon-Hash-For-Shodan.io
-this script will help you find favicon hashes which you can use in shodan to widened your attack surface
+This script will help you find favicon hashes which you can later use on shodan to widened your attack surface.
 
 <b>Pre-requisite:</b>
 >pip3 install mmh3 requests favicon
